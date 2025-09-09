@@ -1,0 +1,158 @@
+/* Importing a modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  background: url('https://i.pinimg.com/736x/2b/6f/1b/2b6f1beb397b0fe4cececcc01ed1a1ff.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Chat container centered and bigger */
+.chat-container {
+  width: 450px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.15);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CloakTalk title styling */
+.chat-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+/* Room header */
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.room-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.leave-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.leave-btn:hover {
+  background: #ec5d5d;
+}
+
+/* Bigger chat box */
+.chat-box {
+  height: 350px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background: #f9f9f9;
+  margin-bottom: 12px;
+}
+
+/* System messages */
+.system-message {
+  text-align: center;
+  background: #eef3f8;
+  color: #555;
+  padding: 4px 8px;
+  margin: 6px auto;
+  border-radius: 15px;
+  font-size: 0.85em;
+  font-style: italic;
+  width: fit-content;
+}
+
+/* Chat messages */
+.message {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+/* User message on right */
+.message.own {
+  background: #c4e6c4;
+  align-self: flex-end;
+  text-align: right;
+}
+
+/* Other users' messages on left */
+.message:not(.own) {
+  background: #afb6d6;
+  border: 1px solid #ddd;
+  align-self: flex-start;
+}
+
+/* Sensitivity colors */
+.message.high {
+  background: #ffe5e5;
+}
+.message.medium {
+  background: #fff5d1;
+}
+
+/* Countdown meta */
+.meta {
+  font-size: 0.75em;
+  color: gray;
+}
+
+/* Typing indicator */
+.typing {
+  font-size: 0.85em;
+  color: gray;
+  margin-top: 4px;
+}
+
+/* Input box */
+.input-box {
+  display: flex;
+  gap: 6px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.input-box button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.input-box button:hover {
+  background: #218838;
+}
+
+.placeholder {
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
