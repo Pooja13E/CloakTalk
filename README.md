@@ -9,9 +9,9 @@ It’s built using **React**, **Node.js**, and **Socket.io**, ensuring **secure 
 
 - **End-to-End AES Encryption** – Messages are encrypted in the browser before being sent.
 - **Message Sensitivity Classification**:
-  -- **High** – Credit card, Aadhaar, PAN, SSN, OTP → Auto-deletes in **30s**.
-  -- **Medium** – Email addresses, phone numbers → Auto-deletes in **60s**.
-  --**Low** – Normal text, no auto-deletion.
+  - **High** – Credit card, Aadhaar, PAN, SSN, OTP → Auto-deletes in **30s**.
+  - **Medium** – Email addresses, phone numbers → Auto-deletes in **60s**.
+  -**Low** – Normal text, no auto-deletion.
 - **Room-Based Chat** – Join or leave any room instantly.
 - **Self-Destructing Messages** – Auto-removal of sensitive messages with countdown.
 - **Typing Indicators** – See when others are typing.
@@ -40,26 +40,26 @@ It’s built using **React**, **Node.js**, and **Socket.io**, ensuring **secure 
 (1) Install Dependencies
 
 **Backend:**
-cd backend
-npm install
+-cd backend
+-npm install
 
 **Frontend:**
-cd ../frontend
-npm install
+-cd frontend
+-npm install
 
 (2) Run the Backend Server
 
-cd backend
-node server.js
+-cd backend
+-node server.js
 
-Output Screen: Server runs at: http://localhost:4000
+-Output Screen: Server runs at: http://localhost:4000
 
 (3) Run the Frontend
 
-cd frontend
-npm run dev
+-cd frontend
+-npm run dev
 
-Output Screen: http://localhost:5173 (Vite default)
+-Output Screen: http://localhost:5173 (Vite default)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
